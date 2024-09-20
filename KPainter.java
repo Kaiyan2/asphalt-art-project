@@ -2,6 +2,7 @@ import org.code.neighborhood.*;
 
 public class KPainter extends MuralPainter {
 
+//paints the letter K
  public void paintK(String color) {
    setPaint(10);
    move();   

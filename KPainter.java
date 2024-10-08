@@ -2,7 +2,9 @@ import org.code.neighborhood.*;
 
 public class KPainter extends MuralPainter {
 
-//paints the letter K
+  /*
+  * The painter paints the letter K in whichever color is selected.
+  */
  public void paintK(String color) {
    setPaint(10);
    move();   
@@ -46,7 +48,7 @@ public class KPainter extends MuralPainter {
    turnRight();
    move();
    move();
-     
+   
  }
 
 }

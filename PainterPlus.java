@@ -1,15 +1,18 @@
 import org.code.neighborhood.*;
 
 public class PainterPlus extends Painter {
-
-//turns the painter to the right
+  /*
+  * Turns the painter to the right.
+  */
   public void turnRight() {
   turnLeft();
   turnLeft();
   turnLeft();
   }
 
-//takes all the paint from the bucket the painter is on
+  /*
+  * Takes all the paint from the bucket the painter is standing on.
+  */
   public void takeAllPaint() {
     while (isOnBucket()) {
       takePaint();      
@@ -17,8 +20,9 @@ public class PainterPlus extends Painter {
     
   }
 
-
-//paints a donut or circle type figure
+  /*
+  * Paints a Donut like shape by painting in a circle and leaving the middle empty.
+  */
   public void paintDonut(String color) {
     while (hasPaint()) {
       move();
@@ -31,12 +35,14 @@ public class PainterPlus extends Painter {
     }
 
   }
-
+  /*
+  * Moves the painter forward until it can't anymore.
+  */
     public void moveFast() {
       while (canMove()) {
         move();
       }
 
     }
-
+  
 }
